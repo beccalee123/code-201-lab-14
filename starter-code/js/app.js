@@ -7,9 +7,7 @@ var Cart = function(items) {
 };
 
 Cart.prototype.addItem = function(product, quantity) {
-  var optionEl = document.createElement('option');
-  optionEl.textContent = Products.allProducts[i].name;
-  select.appendChild(optionEl);
+
 };
 
 Cart.prototype.saveToLocalStorage = function() {
