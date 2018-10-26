@@ -44,8 +44,18 @@ function addSelectedItemToCart() {
   cart.addItem(product, quantity);
 }
 
+var counter = 0;
+
+var itemCounter = document.getElementById('itemCounter');
+
 // TODO: Update the cart count in the header nav with the number of items in the Cart
-function updateCounter() {}
+function updateCounter() {
+  counter++;
+  
+  var pEl = document.createElement('p');
+  pEl.textContent = counter;
+  itemCounter.appendChild(pEl);
+}
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
